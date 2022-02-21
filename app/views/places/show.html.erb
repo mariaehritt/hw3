@@ -2,7 +2,10 @@
 
 <ul>
     <% for post in @place.posts %>
-       <li> <%= "#{post.title}, #{post.description}, #{post.posted_on}" %> </li>
+    <div class="col-3">
+        <h2> <%= post.title %> </h2>
+        <p> <%= post.posted_on %> </p>
+        <p> <%= post.description %> </p>
     <% end %>
 </ul>
 

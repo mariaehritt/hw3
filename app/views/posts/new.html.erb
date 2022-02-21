@@ -1,4 +1,4 @@
-<h1> Create New <%= @place.name %> Post </h1>
+<h1> Create New Post </h1>
 
 <%= form_with model: @post do |form| %>
  
@@ -19,7 +19,6 @@
   
 
   <%= form.hidden_field "place_id"%>
-  <%= form.hidden_field "created_at"%>
-  <%= form.hidden_field "updated_at"%>
+
   <%= form.submit "Save Post" %>
 <% end %>
